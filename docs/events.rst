@@ -28,7 +28,7 @@ automatically.
   class BlogsController extends AppController
   {
 
-      public function implementedEvents()
+      public function implementedEvents() : array
       {
           return parent::implementedEvents() + ['Crud.beforeFind' => '_beforeFind'];
       }
